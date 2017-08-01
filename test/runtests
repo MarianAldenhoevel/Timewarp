@@ -1,5 +1,5 @@
 #!/bin/bash
 # Creates a few example videos from test-input with various parameters
 
-python ../timewarp.py -v -i ./input/rocketlaunch.mp4 -o ./output/rocketlaunch.mp4 -d 120
-python ../timewarp.py -v -i ./input/poledance.mp4 -o ./output/poledance.mp4 -d 20
+../timewarp.py -v -i ./input/poledance.mp4 -o ./output/poledance.mp4 -d 20
+../timewarp.py -v -i ./input/rocketlaunch.mp4 -o ./output/rocketlaunch.mp4 -d 120
