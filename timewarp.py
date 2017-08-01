@@ -135,6 +135,7 @@ try:
     # iterate through the frames
     frame_index = 0
     for frame in reader.nextFrame():
+        lastframe = frame
         frame_index = frame_index + 1
 
         if (args.verbosity >= 2) or (frame_index%100 == 0):
@@ -155,10 +156,15 @@ try:
     if args.verbosity >= 1:
         print "Winding up buffer..."
 
-    frames.pop()
-    while (len(frames) > 0):
-        generateoutputframe()
+    for _ in xrange(args.delta):
+        frame_index = frame_index + 1
+
+        if (args.verbosity >= 2) or (frame_index%100 == 0):
+            print "Processing frame #{0}...".format(frame_index)
+        
+        frames.append(lastframe)
         frames.pop(0)
+        generateoutputframe()
         
 finally:
     if args.verbosity >= 1:
