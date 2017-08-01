@@ -1,1 +1,7 @@
 This folder holds input to the test/demo suite.
+
+All sources come from Youtube and are under CC license. Attributions:
+
+poledance.mp4:    https://www.youtube.com/watch?v=mbvnWWqSjhg
+rocketlaunch.mp4: https://www.youtube.com/watch?v=nVZJbFXYCFU
+
