@@ -1,4 +1,16 @@
-"""This is the main module of the timewarp video processor"""
+"""
+    This is the main module of the timewarp video processor.
+
+    Copyright (c) 2017 Marian Aldenhövel
+
+
+    See the following sites for more information. 
+
+    https://marian-aldenhoevel.de/timewarp
+    https://github.com/MarianAldenhoevel/Timewarp
+
+    Published under the MIT license, see https://github.com/MarianAldenhoevel/Timewarp/blob/master/LICENSE
+"""
 
 import argparse
 import json
