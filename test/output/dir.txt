@@ -1,0 +1,1 @@
+This folder takes output files from the test/demo suite.
